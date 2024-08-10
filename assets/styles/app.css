@@ -29,9 +29,9 @@ header h1 {
 }
 
 button {
-  background: #540075;
+  background: #9e8ba7;
   color: white;
-  border: 1px solid #540075;
+  border: 1px solid #9e8ba7;
   border-radius: 5px;
   padding: 0.5rem 2rem;
   font: inherit;
@@ -44,13 +44,13 @@ button:focus {
 
 button:hover,
 button:active {
-  background: #790fa3;
-  border-color: #790fa3;
+  background: #90779b;
+  border-color: #90779b;
 }
 
 .cart {
   margin: 5rem 2rem;
-  border: 2px solid #540075;
+  border: 2px solid #ccbfd2;
   border-radius: 10px;
   padding: 2rem;
   display: flex;
@@ -60,20 +60,20 @@ button:active {
 .cart h2 {
   margin: 0;
   font-size: 1.5rem;
-  color: #540075;
+  color: #ccbfd2;
 }
 
 .product-list {
   list-style: none;
   margin: 0 2rem;
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
+  gap: 1.5rem;
 }
 
 .product-item {
-  margin: 2rem auto;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
-  width: 50rem;
-  max-width: 90%;
 }
 
 .product-item img {

@@ -27,7 +27,7 @@ class Component {
     }
   }
 
-  render() {}
+  render() { }
 
   createRootElement(tag, cssClasses, attributes) {
     const rootElement = document.createElement(tag);
@@ -84,7 +84,6 @@ class ShoppingCart extends Component {
       <button>Order Now!</button>
     `;
     const orderButton = cartEl.querySelector('button');
-    // orderButton.addEventListener('click', () => this.orderProducts());
     orderButton.addEventListener('click', this.orderProducts);
     this.totalOutput = cartEl.querySelector('h2');
   }
@@ -131,16 +130,28 @@ class ProductList extends Component {
   fetchProducts() {
     this.#products = [
       new Product(
-        'A Pillow',
-        'https://www.maxpixel.net/static/photo/2x/Soft-Pillow-Green-Decoration-Deco-Snuggle-1241878.jpg',
+        'Pillow',
+        'https://cdn.thewirecutter.com/wp-content/media/2023/01/bedpillows-2048px-9999.jpg',
         'A soft pillow!',
         19.99
       ),
       new Product(
-        'A Carpet',
-        'https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Ardabil_Carpet.jpg/397px-Ardabil_Carpet.jpg',
+        'Carpet',
+        'https://i5.walmartimages.com/seo/79-Inch-Luxury-Super-Soft-Shaggy-Area-Rug-Shaggy-Rug-Fluffy-Shag-Rug-Floor-Rug-Anti-Skid-Carpet-For-Living-Room-Bedroom-Kids-Pets-Play-Carpet_22ef571b-11a8-4b1a-89fd-53fec208d818.c0c6173d7d75cddaf96ab8db25679471.jpeg',
         'A carpet which you might like - or not.',
-        89.99
+        59.99
+      ),
+      new Product(
+        'Blanket',
+        'https://m.media-amazon.com/images/I/81LNhnl6rhL._AC_UF894,1000_QL80_.jpg',
+        'A soft blanket!',
+        29.99
+      ),
+      new Product(
+        'Couch',
+        'https://i5.walmartimages.com/seo/HONBAY-Wider-Oversized-Modular-Extra-Sectional-Deep-Seat-Sofa-Couch-Chenille-L-Shaped-Removable-Cover-Storage-Seats-Living-Room-Light-Grey_ef3d8fca-732f-490e-9c47-0c9d3f6a86d9.2630a367b4d307b858a36f5caed53786.jpeg',
+        'Living room gray couch',
+        899.99
       )
     ];
     this.renderProducts();
