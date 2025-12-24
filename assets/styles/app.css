@@ -14,12 +14,10 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  height: 4rem;
+  height: 3rem;
   width: 100%;
-  display: flex;
-  align-items: center;
   background: #90779b;
-  padding-left: 1rem;
+  padding: 0.5rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.26);
 }
 
@@ -85,48 +83,6 @@ button:active {
 .product-item h2,
 .product-item h3 {
   margin: 0 0 1rem 0;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo > img {
-  height: 35px;
-}
-
-.logo-txt {
-  padding-left: 7px;
-  display: flex;
-  flex-direction: column;
-  color: #ffffff;
-  align-items: flex-start;
-}
-
-.logo-img {
-  width: 2rem;
-  margin-right: 3px;
-}
-
-.logo-txt h1,
-.logo-txt span {
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  letter-spacing: 4px;
-  color: #ffffff;
-}
-
-.logo-txt h1 {
-  font-weight: bolder;
-  font-size: 1.1rem;
-  margin-top: 2px;
-}
-
-.logo-txt span {
-  font-weight: lighter;
-  font-size: 0.85rem;
 }
 
 .row {
